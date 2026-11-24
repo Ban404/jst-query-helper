@@ -1,0 +1,46 @@
+# ---- 凭据与本地配置（绝不能进 git）----
+config.json
+**/config.json
+!config.example.json
+**/.jst-open-platform-connections.json
+**/user_config.json
+*.token
+
+# ---- 运行时缓存与临时文件 ----
+.cache/
+**/.cache/
+.tmp/
+**/.tmp/
+*.tmp
+*.log
+schema_revisions.json
+
+# ---- 数据导出（可能含序列号/客户信息）----
+*.csv
+!tests/fixtures/*.csv
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+
+# ---- 编辑器与系统 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- 打包产物（用 build.py 生成，不入库）----
+dist/
+_verify/
+build/
+*.zip

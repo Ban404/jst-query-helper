@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "jst-helper": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "server.mjs"
+      ],
+      "cwd": ".",
+      "runtime": {
+        "type": "node",
+        "version": ">=18.0.0"
+      },
+      "timeout": 300000
+    }
+  }
+}

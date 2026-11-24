@@ -1,0 +1,27 @@
+{
+  "name": "聚水潭查询助手",
+  "name_zh": "聚水潭查询助手",
+  "name_en": "JST Query Helper",
+  "description": "只读查询聚水潭 ERP 的店铺、商品、订单、库存、销售出库单与产品序列号，并在首次使用时引导安装水宝、登录和授权。",
+  "description_zh": "只读查询聚水潭 ERP 全部 36 个查询接口，常见业务问题一句话出中文结论，带首次使用的安装引导：水宝安装、登录、连接管理授权、7 天续期。",
+  "description_en": "Read-only JST ERP queries with first-time setup guidance for Shuibao install, login and authorization.",
+  "source": "jst-helper",
+  "type": "mcp",
+  "version": "5.0.0",
+  "examples_zh": [
+    "查一下现在还有多少库存",
+    "有没有待发货的订单",
+    "查最近已发货订单的产品序列号",
+    "这个序列号是哪单发的",
+    "查一下最近的售后退货退款",
+    "第一次用，我该怎么装",
+    "水宝授权在哪里点",
+    "登录过期了怎么办"
+  ],
+  "examples_en": [
+    "Show current inventory",
+    "Any orders waiting to ship",
+    "Which order was this serial number shipped in",
+    "Guide me through the first-time setup"
+  ]
+}
