@@ -56,4 +56,3 @@ python tools/build.py            # 重建三个 zip
 
 - 三套都含 [免责声明](DISCLAIMER.md) 与安全策略；公开前再跑一遍敏感扫描。
 - 详情与隐私说明见 [打包与上架](docs/MARKETPLACE.zh-CN.md) 与 [SECURITY.md](SECURITY.md)。
-- GitHub 推送步骤见 [PUSH.zh-CN.md](PUSH.zh-CN.md)。
