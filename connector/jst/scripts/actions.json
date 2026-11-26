@@ -1,0 +1,467 @@
+{
+  "generated_for": "jst-open-platform skill (水宝自带查询程序)",
+  "refreshed_at": "2026-11-23 17:53:16",
+  "cli": "jst-open-platform.exe",
+  "domains": {
+    "基础信息": 6,
+    "商品": 15,
+    "订单": 10,
+    "库存": 5,
+    "售后": 6,
+    "采购": 12,
+    "入库": 4,
+    "出库": 5,
+    "其他出入库": 3,
+    "调拨": 6,
+    "虚拟仓": 9,
+    "播种": 8
+  },
+  "note": "kind=write 的接口在只读模式下会被拦截；本文件由 refresh_catalog.py 从水宝重新识别生成",
+  "actions": {
+    "aftersale_noinfo_upload": {
+      "kind": "write",
+      "name": "售后上传（无信息件）",
+      "domain": "售后"
+    },
+    "aftersale_received_query": {
+      "kind": "query",
+      "name": "实际收货查询",
+      "domain": "售后"
+    },
+    "aftersale_upload": {
+      "kind": "write",
+      "name": "售后上传",
+      "domain": "售后"
+    },
+    "allocate_kc_upload": {
+      "kind": "write",
+      "name": "库存调拨上传（跨仓调拨）",
+      "domain": "调拨"
+    },
+    "allocate_query": {
+      "kind": "query",
+      "name": "调拨单查询",
+      "domain": "调拨"
+    },
+    "api_drp_inneropen_partner_channel_querymysupplier": {
+      "kind": "query",
+      "name": "供销商列表查询",
+      "domain": "基础信息"
+    },
+    "api_drp_inneropen_partner_supplier_querymychannel": {
+      "kind": "query",
+      "name": "分销商列表查询",
+      "domain": "基础信息"
+    },
+    "category_query": {
+      "kind": "query",
+      "name": "商品类目查询",
+      "domain": "商品"
+    },
+    "combine_sku_query": {
+      "kind": "query",
+      "name": "组合装商品资料查询",
+      "domain": "商品"
+    },
+    "inventory_count_query": {
+      "kind": "query",
+      "name": "库存盘点查询",
+      "domain": "库存"
+    },
+    "inventory_query": {
+      "kind": "query",
+      "name": "商品库存查询",
+      "domain": "库存"
+    },
+    "item_combinesku_upload": {
+      "kind": "write",
+      "name": "组合装商品资料上传",
+      "domain": "商品"
+    },
+    "jushuitan_allocate_cancel_v2": {
+      "kind": "write",
+      "name": "调拨单取消",
+      "domain": "调拨"
+    },
+    "jushuitan_allocate_confirm": {
+      "kind": "write",
+      "name": "调拨单确认",
+      "domain": "调拨"
+    },
+    "jushuitan_allocate_in_upload": {
+      "kind": "write",
+      "name": "库存调拨上传（仓内调拨）",
+      "domain": "调拨"
+    },
+    "jushuitan_appointmentin_upload": {
+      "kind": "write",
+      "name": "预约入库上传",
+      "domain": "采购"
+    },
+    "jushuitan_binid_carryid_bind": {
+      "kind": "write",
+      "name": "绑定播种柜号和播种车",
+      "domain": "播种"
+    },
+    "jushuitan_carryid_check": {
+      "kind": "query",
+      "name": "校验播种车的状态是否可用",
+      "domain": "播种"
+    },
+    "jushuitan_diffallocate_create": {
+      "kind": "write",
+      "name": "调拨差异单上传",
+      "domain": "调拨"
+    },
+    "jushuitan_drporder_split": {
+      "kind": "write",
+      "name": "订单拆分",
+      "domain": "订单"
+    },
+    "jushuitan_inventoryv2_upload": {
+      "kind": "write",
+      "name": "新建盘点单",
+      "domain": "库存"
+    },
+    "jushuitan_itemsku_costprice_upload": {
+      "kind": "write",
+      "name": "商品历史成本价上传",
+      "domain": "商品"
+    },
+    "jushuitan_itemsku_upload": {
+      "kind": "write",
+      "name": "普通商品资料上传",
+      "domain": "商品"
+    },
+    "jushuitan_manufacture_query": {
+      "kind": "query",
+      "name": "加工单查询",
+      "domain": "采购"
+    },
+    "jushuitan_manufacture_upload": {
+      "kind": "write",
+      "name": "加工单上传",
+      "domain": "采购"
+    },
+    "jushuitan_order_label_upload": {
+      "kind": "write",
+      "name": "修改订单标签",
+      "domain": "订单"
+    },
+    "jushuitan_order_remark_upload": {
+      "kind": "write",
+      "name": "修改卖家备注",
+      "domain": "订单"
+    },
+    "jushuitan_orderbyoid_cancel": {
+      "kind": "write",
+      "name": "订单取消",
+      "domain": "订单"
+    },
+    "jushuitan_orders_upload": {
+      "kind": "write",
+      "name": "订单上传（自有商城）",
+      "domain": "订单"
+    },
+    "jushuitan_otherinout_cancel": {
+      "kind": "write",
+      "name": "其他出入库取消",
+      "domain": "其他出入库"
+    },
+    "jushuitan_otherinout_upload": {
+      "kind": "write",
+      "name": "其他出入库上传",
+      "domain": "其他出入库"
+    },
+    "jushuitan_purchase_change_status": {
+      "kind": "write",
+      "name": "变更采购单状态",
+      "domain": "采购"
+    },
+    "jushuitan_purchase_upload": {
+      "kind": "write",
+      "name": "采购单上传",
+      "domain": "采购"
+    },
+    "jushuitan_purchasebooking_query": {
+      "kind": "query",
+      "name": "预约入库查询",
+      "domain": "采购"
+    },
+    "jushuitan_purchaselabel_upload": {
+      "kind": "write",
+      "name": "采购单加工单标签（新增/移除）",
+      "domain": "采购"
+    },
+    "jushuitan_purchaseout_cancel": {
+      "kind": "write",
+      "name": "采购退货取消",
+      "domain": "出库"
+    },
+    "jushuitan_seed_callback": {
+      "kind": "write",
+      "name": "播种回传（出库）",
+      "domain": "播种"
+    },
+    "jushuitan_seed_return": {
+      "kind": "write",
+      "name": "播种回传（不出库）",
+      "domain": "播种"
+    },
+    "jushuitan_skumap_upload": {
+      "kind": "write",
+      "name": "店铺商品资料上传",
+      "domain": "商品"
+    },
+    "jushuitan_wave_get": {
+      "kind": "query",
+      "name": "获取播种批次信息",
+      "domain": "播种"
+    },
+    "logisticscompany_query": {
+      "kind": "query",
+      "name": "物流公司查询",
+      "domain": "基础信息"
+    },
+    "mall_item_query": {
+      "kind": "query",
+      "name": "普通商品资料查询（按款）",
+      "domain": "商品"
+    },
+    "order_node_soid_set": {
+      "kind": "write",
+      "name": "修改线下备注",
+      "domain": "订单"
+    },
+    "order_sent_upload": {
+      "kind": "write",
+      "name": "订单发货",
+      "domain": "订单"
+    },
+    "orders_modifywms_upload": {
+      "kind": "write",
+      "name": "订单指定发货仓",
+      "domain": "订单"
+    },
+    "orders_out_simple_query": {
+      "kind": "query",
+      "name": "销售出库查询",
+      "domain": "出库"
+    },
+    "orders_single_query": {
+      "kind": "query",
+      "name": "订单查询（商家自有商城、跨境线下）",
+      "domain": "订单"
+    },
+    "orders_wms_sent_upload": {
+      "kind": "write",
+      "name": "出库发货",
+      "domain": "出库"
+    },
+    "other_inout_query": {
+      "kind": "query",
+      "name": "其他出入库查询",
+      "domain": "其他出入库"
+    },
+    "purchase_query": {
+      "kind": "query",
+      "name": "采购单查询",
+      "domain": "采购"
+    },
+    "purchaseout_query": {
+      "kind": "query",
+      "name": "采购退货查询",
+      "domain": "出库"
+    },
+    "refund_single_query": {
+      "kind": "query",
+      "name": "售后退货退款查询",
+      "domain": "售后"
+    },
+    "shops_query": {
+      "kind": "query",
+      "name": "店铺查询",
+      "domain": "基础信息"
+    },
+    "sku_query": {
+      "kind": "query",
+      "name": "普通商品资料查询（按 SKU）",
+      "domain": "商品"
+    },
+    "skumap_query": {
+      "kind": "query",
+      "name": "店铺商品资料查询",
+      "domain": "商品"
+    },
+    "supplier_query": {
+      "kind": "query",
+      "name": "供应商查询",
+      "domain": "采购"
+    },
+    "supplier_upload": {
+      "kind": "write",
+      "name": "供应商上传",
+      "domain": "采购"
+    },
+    "webapi_aftersaleapi_confirmgoods": {
+      "kind": "write",
+      "name": "售后确认收到货物",
+      "domain": "售后"
+    },
+    "webapi_aftersaleapi_open_confirm": {
+      "kind": "write",
+      "name": "售后单确认",
+      "domain": "售后"
+    },
+    "webapi_itemapi_bom_getskubompagelist": {
+      "kind": "query",
+      "name": "BOM 信息查询",
+      "domain": "商品"
+    },
+    "webapi_itemapi_bom_save": {
+      "kind": "write",
+      "name": "BOM 信息上传",
+      "domain": "商品"
+    },
+    "webapi_itemapi_category_addorupdate": {
+      "kind": "write",
+      "name": "商品类目上传/更新",
+      "domain": "商品"
+    },
+    "webapi_itemapi_iteminventory_batchupdatewmsvirtualqtys": {
+      "kind": "write",
+      "name": "导入/更新虚拟库存",
+      "domain": "库存"
+    },
+    "webapi_itemapi_iteminventory_getvirtualstock": {
+      "kind": "query",
+      "name": "查询虚拟仓库存",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_itemsku_gethistorycostpricev2": {
+      "kind": "query",
+      "name": "商品历史成本价查询",
+      "domain": "商品"
+    },
+    "webapi_itemapi_lockwarehouse_getlwhallocationlist": {
+      "kind": "query",
+      "name": "查询虚拟仓调拨单",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_getlwhoperationlist": {
+      "kind": "query",
+      "name": "查询虚拟仓分配归还单据",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_getwarehouselist": {
+      "kind": "query",
+      "name": "查询虚拟仓列表",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_lockpurchase_createorupdatepurchase": {
+      "kind": "write",
+      "name": "创建/更新虚拟仓采购申请单",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_lockpurchase_getpagelockpurchases": {
+      "kind": "query",
+      "name": "查询虚拟仓采购申请单",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_lockpurchase_verifylockpurchases": {
+      "kind": "write",
+      "name": "提交审核/审核/打回采购申请单",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_lwhallocationcreate": {
+      "kind": "write",
+      "name": "创建虚拟仓调拨单",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_lockwarehouse_lwhoperationcreate": {
+      "kind": "write",
+      "name": "创建虚拟仓分配/归还单据",
+      "domain": "虚拟仓"
+    },
+    "webapi_itemapi_suppliersku_getsupplierskulist": {
+      "kind": "query",
+      "name": "商品多供应商查询",
+      "domain": "商品"
+    },
+    "webapi_itemapi_suppliersku_save": {
+      "kind": "write",
+      "name": "商品多供应商上传/更新",
+      "domain": "商品"
+    },
+    "webapi_orderapi_questionorder_questions": {
+      "kind": "write",
+      "name": "订单转异常",
+      "domain": "订单"
+    },
+    "webapi_userapi_company_getcompanyusers": {
+      "kind": "query",
+      "name": "商家用户信息",
+      "domain": "基础信息"
+    },
+    "webapi_wmsapi_openpurchase_editpurchase": {
+      "kind": "write",
+      "name": "修改采购单",
+      "domain": "采购"
+    },
+    "webapi_wmsapi_pack_pagequerypackanditems": {
+      "kind": "query",
+      "name": "箱及仓位库存查询",
+      "domain": "库存"
+    },
+    "webapi_wmsapi_packsn_batchadd": {
+      "kind": "write",
+      "name": "批量录入箱唯一码",
+      "domain": "入库"
+    },
+    "webapi_wmsapi_purchase_cancel": {
+      "kind": "write",
+      "name": "采购单/加工单/预约入库单作废",
+      "domain": "采购"
+    },
+    "webapi_wmsapi_purchasein_createbatch": {
+      "kind": "write",
+      "name": "采购入库上传",
+      "domain": "入库"
+    },
+    "webapi_wmsapi_purchasein_purchaseinquery": {
+      "kind": "query",
+      "name": "采购入库查询",
+      "domain": "入库"
+    },
+    "webapi_wmsapi_purchaseout_createbatch": {
+      "kind": "write",
+      "name": "采购退货上传",
+      "domain": "出库"
+    },
+    "webapi_wmsapi_skusn_batchadd_simple": {
+      "kind": "write",
+      "name": "批量录入唯一码",
+      "domain": "入库"
+    },
+    "webapi_wmsapi_wave_bindbinidcarryid": {
+      "kind": "write",
+      "name": "绑定播种车",
+      "domain": "播种"
+    },
+    "webapi_wmsapi_wave_unbindinoutbycarryid": {
+      "kind": "write",
+      "name": "根据播种车号解绑出库单",
+      "domain": "播种"
+    },
+    "webapi_wmsapi_wave_unbindwavecarryid": {
+      "kind": "write",
+      "name": "解绑批次拣货车/播种车",
+      "domain": "播种"
+    },
+    "wms_partner_query": {
+      "kind": "query",
+      "name": "仓库查询",
+      "domain": "基础信息"
+    }
+  }
+}
