@@ -1,0 +1,49 @@
+{
+  "_note": "把下面任一段 mcpServers 配置粘贴到对应客户端的配置文件里。server.mjs 用自身位置找资源，从哪个目录启动都行；路径请填本包解压后的绝对路径。",
+  "_npx_note": "发布到 npm 后，可用 npx 免安装启动：command 填 npx，args 填 -y 与包名。未发布前用 node + 本地路径。",
+  "claude_desktop": {
+    "mcpServers": {
+      "jst-query": {
+        "command": "node",
+        "args": ["<本包解压目录>/server.mjs"]
+      }
+    }
+  },
+  "cursor": {
+    "mcpServers": {
+      "jst-query": {
+        "command": "node",
+        "args": ["<本包解压目录>/server.mjs"]
+      }
+    }
+  },
+  "cline": {
+    "mcpServers": {
+      "jst-query": {
+        "command": "node",
+        "args": ["<本包解压目录>/server.mjs"]
+      }
+    }
+  },
+  "windsurf": {
+    "mcpServers": {
+      "jst-query": {
+        "command": "node",
+        "args": ["<本包解压目录>/server.mjs"]
+      }
+    }
+  },
+  "generic_npx": {
+    "mcpServers": {
+      "jst-query": {
+        "command": "npx",
+        "args": ["-y", "jst-query-mcp"]
+      }
+    }
+  },
+  "_env": {
+    "JST_CLI_PATH": "可选：查询程序的绝对路径。不填则自动在水宝安装目录里找。",
+    "JXY_TOKEN": "可选：登录凭据。不填则自动从本机水宝配置读取；不要把真实 token 写进配置文件。",
+    "JST_ALLOW_WRITE": "可选：设为 1 才解除只读白名单（默认只读，普通用户无需设置）。"
+  }
+}

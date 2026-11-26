@@ -1,0 +1,49 @@
+{
+  "name": "jst-query-mcp",
+  "version": "5.0.1",
+  "description": "Read-only MCP server for JST ERP: inventory, orders, shipments and product serial numbers, with guided first-time setup. Chinese / English.",
+  "description_zh": "只读查询聚水潭 ERP 的通用 MCP Server：库存、待发货、发货序列号，带首次使用引导。任何支持 MCP 的客户端都能用。",
+  "type": "module",
+  "main": "server.mjs",
+  "bin": {
+    "jst-query-mcp": "./server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "ask.mjs",
+    "core.mjs",
+    "guide.json",
+    "scenarios.json",
+    "config-examples.json",
+    "data/",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "icon.svg"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check core.mjs && node --check server.mjs && node --check ask.mjs",
+    "test": "node --check core.mjs && node --check server.mjs && node --check ask.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "jst",
+    "jushuitan",
+    "erp",
+    "inventory",
+    "read-only"
+  ],
+  "license": "MIT",
+  "author": "Ban404",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ban404/justerp-query-helper.git",
+    "directory": "mcp"
+  }
+}
