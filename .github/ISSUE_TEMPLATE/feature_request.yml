@@ -1,0 +1,35 @@
+name: 功能建议 / Feature request
+description: 想要新场景、新字段或更好的引导？告诉我
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题
+      description: 用业务语言描述，比如「我想一次看到每个店铺各发了多少台」
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你期望的形式
+      description: 一句话命令、输出哪些列、要不要导 CSV 等
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 涉及
+      options:
+        - 新场景 / 新查询
+        - 新手引导话术
+        - 输出格式 / CSV
+        - 文档
+        - 其他
+    validations:
+      required: true
+  - type: checkboxes
+    id: check
+    attributes:
+      options:
+        - label: 我理解本项目只做只读查询，不支持写操作
+          required: true
